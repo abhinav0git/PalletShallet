@@ -1384,7 +1384,6 @@ function updateLinks(slug) {
   });
 }
 
-
 let currentSlug = '';
 const checkForUpdates = () => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -1396,7 +1395,17 @@ const checkForUpdates = () => {
   setTimeout(checkForUpdates, 100);
 };
 checkForUpdates();
-      
+
+
+//tipDIv
+document.addEventListener("DOMContentLoaded", function() {
+  const tipBar = document.getElementById("tip-bar");
+  tipBar.classList.add("show");
+  setTimeout(function() {
+      tipBar.classList.remove("show");
+      tipBar.classList.add("hide");
+  }, 2000);
+});
 
 
 
