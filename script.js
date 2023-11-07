@@ -565,8 +565,8 @@ exportButton.addEventListener('click', () => {
     Primary Button: ${primbuttnColor.value} (RGB: ${hexToRgb(primbuttnColor.value)})
     Secondary Button: ${secbuttnColor.value} (RGB: ${hexToRgb(secbuttnColor.value)})
     Accent: ${accentColor.value} (RGB: ${hexToRgb(accentColor.value)})\n
-Realtime Colors link for selected colors: ${window.location.href}\n
-Thanks for using RealtimeColors.com!`;
+Colors link for selected colors: ${window.location.href}\n
+Thanks for using PalletShallet!`;
   const colorBlob = new Blob([colorText], { type: 'text/plain' });
   const colorFile = new File([colorBlob], 'colors.txt', { type: 'text/plain' });
 
