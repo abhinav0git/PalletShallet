@@ -135,7 +135,7 @@ document.addEventListener('keydown', event => {
     updateSlug();
     event.preventDefault();
     attachColorPickerListeners(colorPickers, hexInputs);
-
+    return false;
   }
 });
 
@@ -604,6 +604,11 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+window.onkeydown = function(e) {
+  if(e.keyCode == 32 && e.target == document.body){
+    e.preventDefault();
+  }
+}
 
 // 
 // 
