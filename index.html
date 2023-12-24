@@ -4,6 +4,9 @@
         <title>PalletShallet</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="logo11.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -316,7 +319,7 @@
                             </svg>
                         </div>
                         <div class="faq-a">
-                            <p>You can find more information about Pallet Shallet on the <a href="/about" target="_blank" class="link">About</a> page. You can also <a href="mailto:juxtopposed.me@gmail.com" target="_blank" class="link">email me</a> any questions you might have.</p>
+                            <p>You can find more information about Pallet Shallet on the <a href="docs.html" target="_self" class="link">About</a> page. You can also <a href="mailto:abhinav07c@gmail.com" target="_blank" class="link">email me</a> any questions you might have.</p>
                         </div>
                     </div> 
 
@@ -607,6 +610,21 @@
             mondrianAnswer.classList.add("expand");
             mondrianFAQIcon.classList.add("expand");
             });
+
+            var faqIcons = document.querySelectorAll('.faq-icon');
+            // Add click event listener to each faq-icon
+            faqIcons.forEach(function (faqIcon) {
+                faqIcon.addEventListener('click', function () {
+
+                    // Get the parent element of faq-icon
+                    var faqParent = faqIcon.closest('.faq');
+
+                    // Toggle the "expand" class on faq-q and faq-a within the same parent
+                    faqParent.querySelector('.faq-q').classList.toggle('expand');
+                    faqParent.querySelector('.faq-a').classList.toggle('expand');
+                    });
+            });
+
         </script>
 
 
