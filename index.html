@@ -612,6 +612,7 @@
             });
 
             var faqIcons = document.querySelectorAll('.faq-icon');
+
             // Add click event listener to each faq-icon
             faqIcons.forEach(function (faqIcon) {
                 faqIcon.addEventListener('click', function () {
@@ -622,6 +623,7 @@
                     // Toggle the "expand" class on faq-q and faq-a within the same parent
                     faqParent.querySelector('.faq-q').classList.toggle('expand');
                     faqParent.querySelector('.faq-a').classList.toggle('expand');
+                    faqIcon.classList.toggle('expand');
                     });
             });
 
