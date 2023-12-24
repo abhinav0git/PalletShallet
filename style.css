@@ -418,7 +418,7 @@ nav {
 }
 
 .sitename {
-    font-family: 'Rubik Doodle Shadow', sans-serif;
+    /* font-family: 'Rubik Doodle Shadow', sans-serif; */
     font-size: var(--subtitle);
     letter-spacing: -0.5px;
 }
