@@ -1375,7 +1375,7 @@ function updateLinks(slug) {
   const links = document.querySelectorAll('a:not([href^="#"])');
   links.forEach(link => {
     const href = link.getAttribute('href');
-    if (href.startsWith('https://realtimecolors.com')) {
+    if (href.startsWith('https://pallet-shallet.vercel.app/')) {
 
       const url = new URL(href);
       url.searchParams.set('colors', slug);
