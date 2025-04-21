@@ -1374,11 +1374,10 @@
             id="share-link"
             onclick="copyPageUrl()"
           >
-            <span class="tooltip tooltip-share"
-              >Share Link<br /><span class="controls-tooltip"
-                >(CTRL + S)</span
-              ></span
-            >
+            <span class="tooltip tooltip-share" id="share-tooltip">
+              Share Link<br />
+              <span class="controls-tooltip">(CTRL + S)</span>
+            </span>
             <div class="share-link-buttn option-label">Share Link</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1626,6 +1625,20 @@
           faqIcon.classList.toggle("expand");
         });
       });
+
+      function copyPageUrl() {
+        const url = window.location.href;
+        navigator.clipboard.writeText("Check this out! " + url).then(() => {
+          const tooltip = document.getElementById("share-tooltip");
+          tooltip.classList.add("copied");
+          tooltip.innerHTML = `Copied`;
+
+          setTimeout(() => {
+            tooltip.classList.remove("copied");
+            tooltip.innerHTML = `Share Link<br /><span class="controls-tooltip">(CTRL + S)</span>`;
+          }, 2000);
+        });
+      }
     </script>
   </body>
 </html>
