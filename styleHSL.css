@@ -1,13 +1,11 @@
 body {
+  margin: 0 15%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 2em 1em;
-  
-  height: 100%;
-  
-  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
   text-align: center;
   background-color: hsl(0, 0%, 93%);
 }
@@ -18,7 +16,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 2em;
-  
+
   background-color: white;
   padding: 4em;
   border-radius: 20px;
@@ -26,11 +24,9 @@ body {
 
 #game {
   display: grid;
-  grid-auto-flow:column dense;
+  grid-auto-flow: column dense;
   grid-template-rows: 110px 110px;
   grid-auto-columns: 110px;
-  
-  
 }
 
 .square {
@@ -41,7 +37,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
   box-sizing: border-box;
-  
+
   background-color: hsl(212, 100%, 63%);
 }
 
@@ -55,7 +51,8 @@ h1 {
   margin: 0;
 }
 
-div, p {
+div,
+p {
   font-weight: 400;
   font-size: 20px;
 }

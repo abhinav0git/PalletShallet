@@ -1,74 +1,82 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <title>PalletShallet</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="/styleHSL.css">
-        <link rel="icon" type="image/x-icon" href="logo11.png">
-    </head>
+  <head>
+    <title>PalletShallet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styleHSL.css" />
+    <link rel="icon" type="image/x-icon" href="logo11.png" />
+  </head>
 
-    <body>
-        <nav>
-            <div class="logo">
-                <img src="logo11.png" alt="logoface" class="logoface">
-                <a href="index.html"><h2 class="sitename">Pallet Shallet</h2></a>
-            </div>
-        </nav>
-        
+  <body style="gap: 1.5em">
+    <nav style="padding: 1em 2em">
+      <div class="logo">
+        <img src="logo11.png" alt="logoface" class="logoface" />
+        <a href="index.html"><h2 class="sitename">Pallet Shallet</h2></a>
+      </div>
+    </nav>
 
-        <div id="bodyy">
-            
-            <div class="container">
-                <h1>HSL Color Game</h1>
-                <p>Find the block with a different shade or brightness.</p>
-                <div id="game"></div>
-                <div id="score">Pick a block to play.</div>
-                <div id="try-again"></div>
-              </div>
-
+    <div id="bodyy">
+      <div class="container">
+        <h1>HSL Color Game</h1>
+        <p>Find the block with a different shade or brightness.</p>
+        <div id="game"></div>
+        <div id="score">Pick a block to play.</div>
+        <div id="try-again"></div>
+      </div>
+    </div>
+    <div class="footer" id="footer">
+      <div class="logo">
+        <img src="logo11.png" alt="logoface" class="logoface" />
+        <a href="/"><h2 class="sitename reversed">Pallet Shallet</h2></a>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="reversed sub menu-item-header">EXPLORE</div>
+          <a href="https://colorhunt.co/" class="menu-item">Palette Hunt</a>
+          <!-- HSL Color Game -->
+          <a href="/docs.html" class="menu-item reversed">About</a>
+          <!-- <a href="#" class="menu-item reversed">Blog</a> -->
         </div>
-        <div class="footer" id="footer">
-                <div class="logo">
-                    <img src="logo11.png" alt="logoface" class="logoface">
-                    <a href="/"><h2 class="sitename reversed">Pallet Shallet</h2></a>
-                </div>
-                <div class="footer-cols">
-                    
-                    <div class="footer-col">
-                        <div class="reversed sub menu-item-header">EXPLORE</div>
-                        <a href="https://colorhunt.co/" class="menu-item">Palette Hunt</a>
-                        <!-- HSL Color Game -->
-                        <a href="/docs.html" class="menu-item reversed">About</a>
-                        <!-- <a href="#" class="menu-item reversed">Blog</a> -->
-                    </div>
-                </div>
-                <div style="width: 100%; height: 1px; background-color: var(--secondary); opacity: 20%; margin-top: 1em;"></div>
-                <div>
-                    <p class="sub">Feedback? Suggestions? Features you'd like to see? <a href="mailto:abhinav07c@gmail.com" target="_blank" class="link reversed">Contact me!</a></p>
-                    <p class="sub">Made with <3</p>
-                </div>
-                
-        </div>
-    
+      </div>
+      <div
+        style="
+          width: 100%;
+          height: 1px;
+          background-color: var(--secondary);
+          opacity: 20%;
+          margin-top: 1em;
+        "
+      ></div>
+      <div>
+        <p class="sub">
+          Feedback? Suggestions? Features you'd like to see?
+          <a
+            href="mailto:abhinav07c@gmail.com"
+            target="_blank"
+            class="link reversed"
+            >Contact me!</a
+          >
+        </p>
+        <p class="sub">Made with <3</p>
+      </div>
+    </div>
 
+    <script src="script.js" type="module"></script>
+    <!-- <script src="/random-sets.js"></script> -->
+    <!-- <script src="/misc.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="scriptHSL.js"></script>
+    <script>
+      // info about hero of homepage
+      const mondrianInfoIcon = document.getElementById("mondrian-info-icon");
+      const mondrianAnswer = document.querySelector(".mondrian-answer");
+      const mondrianFAQIcon = document.querySelector(".mondrian-icon");
 
-        <script src="script.js" type="module"></script>
-        <script src="/random-sets.js"></script>
-        <script src="/misc.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-        <script src="scriptHSL.js"></script>
-        <script>
-            // info about hero of homepage
-            const mondrianInfoIcon = document.getElementById('mondrian-info-icon');
-            const mondrianAnswer = document.querySelector('.mondrian-answer');
-            const mondrianFAQIcon = document.querySelector('.mondrian-icon');
-
-            mondrianInfoIcon.addEventListener("click", () => {
-            mondrianAnswer.classList.add("expand");
-            mondrianFAQIcon.classList.add("expand");
-            });
-        </script>
-
-    </body>
+      mondrianInfoIcon.addEventListener("click", () => {
+        mondrianAnswer.classList.add("expand");
+        mondrianFAQIcon.classList.add("expand");
+      });
+    </script>
+  </body>
 </html>
